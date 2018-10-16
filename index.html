@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>To Do List</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/octicons/build/build.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-primary">
+        <a class="navbar-brand text-light" href="#">To Do List</a>
+    </nav>
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <label for="newTask">Task</label>
+                        <input type="text" class="form-control" id="newTask" aria-describedby="newTask" placeholder="Enter task name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="taskCategories">Select Category</label>
+                        <select class="form-control" id="taskCategoriesSelect">
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" onclick="addTask()">Add Task</button>
+                </form>
+            </div>
+
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                        <label for="newCategory">Category</label>
+                        <input type="text" class="form-control" id="newCategory" aria-describedby="newCategory"
+                            placeholder="Enter category name">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="addCategory()">Add Category</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mt-4" id="categoriesSection">
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
