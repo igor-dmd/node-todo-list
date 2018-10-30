@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>To Do List</title>
+
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+<nav class="navbar navbar-light bg-primary">
+    <a class="navbar-brand text-light" href="#">To Do List</a>
+</nav>
+
+<div class="container">
+    <div class="row mt-4">
+        <div class="col">
+            <form action="/" method="post">
+                <div class="form-group">
+                    <label for="userName">Username:</label>
+                    <input type="text" class="form-control" id="username" name="username" aria-describedby="username" placeholder="Enter user name" />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input class="form-control" type="password" id="password" name="password" />
+                </div>
+
+                <input class="btn btn-info" type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+</div>
+
+    <script src="js/jquery/dist/jquery.min.js"></script>
+    <script src="js/popper.js/dist/umd/popper.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
